@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 11px; 
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+
+}
+.container{
+    background-color: red;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+}
+.violet{
+    /* background-color:linear-gradinet() hsl(263, 55%, 52%); */
+    background:linear-gradient(hsla(263, 55%, 52%,.798),hsla(263, 55%, 52%,.798));
+    color: white;
+}
+.light-gray{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.white{
+    background-color: white;
+}
+.dark-gray{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+.quote{
+    position:absolute;
+    top: 0%;
+    right: 10px;
+    z-index: -1;
+    color: white;
+}
+.profile img{
+    border-radius: 50px;
+    display: flex;
+    width: 50px;
+    border: 2px solid white;
+    margin-left: 15px;
+    
+}
+.profile{
+    padding-top: 20px;
+}
+.name{
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+
+}
+.name h3{
+    display: flex;
+}
+.name h4{
+    display: block;
+}
+p{
+    line-height: 1.1;
+}
+h2{
+    padding: 10px;
+    z-index: 10;
+}
+p{
+    padding: 10px;
+}
+@media screen and (min-width:768px) {
+    body{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+        grid-template-rows: auto auto;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+    
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto;
+            margin: 110px 30px;
+            /* display: flex; */
+        }
+        .container{
+            margin: 10px;
+
+        }
+        .violet{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .kira{
+            grid-row-start: 1;
+            grid-column-start: 4;
+            grid-row-end: -1;
+        }
+        .dark-gray{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    
+}
